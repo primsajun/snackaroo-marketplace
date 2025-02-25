@@ -1,5 +1,6 @@
 
 import { Laptop, ShoppingBag, Car, Bike, Smartphone, Home, Coffee, Gamepad } from "lucide-react";
+import { Button } from "./ui/button";
 
 const categories = [
   { name: "Snacks & Food", icon: ShoppingBag },
@@ -12,18 +13,42 @@ const categories = [
   { name: "Toys", icon: Gamepad },
 ];
 
-export const CategoryNav = () => {
+interface CategoryNavProps {
+  selectedCategory: string | null;
+  onSelectCategory: (category: string | null) => void;
+}
+
+export const CategoryNav = ({ selectedCategory, onSelectCategory }: CategoryNavProps) => {
   return (
     <div className="container px-4 py-8">
-      <h2 className="mb-6 text-2xl font-semibold">Categories</h2>
+      <div className="mb-6 flex items-center justify-between">
+        <h2 className="text-2xl font-semibold">Categories</h2>
+        {selectedCategory && (
+          <Button 
+            variant="ghost" 
+            onClick={() => onSelectCategory(null)}
+            className="text-sm text-muted-foreground"
+          >
+            Clear filter
+          </Button>
+        )}
+      </div>
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 md:grid-cols-8">
         {categories.map((category) => (
-          <div key={category.name} className="flex flex-col items-center gap-2">
-            <div className="category-icon">
+          <button
+            key={category.name}
+            onClick={() => onSelectCategory(category.name)}
+            className={`flex flex-col items-center gap-2 ${
+              selectedCategory === category.name ? "scale-105" : ""
+            }`}
+          >
+            <div className={`category-icon ${
+              selectedCategory === category.name ? "bg-primary text-white" : ""
+            }`}>
               <category.icon className="h-6 w-6" />
             </div>
             <span className="text-sm font-medium">{category.name}</span>
-          </div>
+          </button>
         ))}
       </div>
     </div>

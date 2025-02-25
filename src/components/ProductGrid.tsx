@@ -7,7 +7,7 @@ const products = [
     id: 1,
     name: "Fresh Fruits Bundle",
     price: 24.99,
-    category: "Food",
+    category: "Snacks & Food",
     image: "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?w=500&q=80",
   },
   {
@@ -31,32 +31,62 @@ const products = [
     category: "Kitchen",
     image: "https://images.unsplash.com/photo-1578643463396-0997cb5328c1?w=500&q=80",
   },
+  {
+    id: 5,
+    name: "Remote Control Car",
+    price: 49.99,
+    category: "Toys",
+    image: "https://images.unsplash.com/photo-1594787318286-3d835c1d207f?w=500&q=80",
+  },
+  {
+    id: 6,
+    name: "Building Blocks Set",
+    price: 29.99,
+    category: "Toys",
+    image: "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=500&q=80",
+  },
 ];
 
-export const ProductGrid = () => {
+interface ProductGridProps {
+  selectedCategory: string | null;
+}
+
+export const ProductGrid = ({ selectedCategory }: ProductGridProps) => {
+  const filteredProducts = selectedCategory
+    ? products.filter((product) => product.category === selectedCategory)
+    : products;
+
   return (
     <div className="container px-4 py-8">
-      <h2 className="mb-6 text-2xl font-semibold">Featured Products</h2>
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {products.map((product) => (
-          <Card key={product.id} className="product-card group">
-            <CardContent className="p-0">
-              <div className="aspect-square overflow-hidden">
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className="h-full w-full object-cover"
-                />
-              </div>
-            </CardContent>
-            <CardFooter className="flex flex-col items-start gap-2 p-4">
-              <Badge variant="secondary">{product.category}</Badge>
-              <h3 className="font-semibold">{product.name}</h3>
-              <p className="text-lg font-bold">${product.price}</p>
-            </CardFooter>
-          </Card>
-        ))}
-      </div>
+      <h2 className="mb-6 text-2xl font-semibold">
+        {selectedCategory ? `${selectedCategory} Products` : "Featured Products"}
+      </h2>
+      {filteredProducts.length === 0 ? (
+        <p className="text-center text-muted-foreground">
+          No products found in this category.
+        </p>
+      ) : (
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          {filteredProducts.map((product) => (
+            <Card key={product.id} className="product-card group">
+              <CardContent className="p-0">
+                <div className="aspect-square overflow-hidden">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+              </CardContent>
+              <CardFooter className="flex flex-col items-start gap-2 p-4">
+                <Badge variant="secondary">{product.category}</Badge>
+                <h3 className="font-semibold">{product.name}</h3>
+                <p className="text-lg font-bold">${product.price}</p>
+              </CardFooter>
+            </Card>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
