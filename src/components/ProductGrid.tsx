@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardFooter } from "./ui/card";
 import { Badge } from "./ui/badge";
 
@@ -143,6 +142,118 @@ const products = [
     price: 79.99,
     category: "Toys",
     image: "https://images.unsplash.com/photo-1594787318286-3d835c1d207f?w=500&q=80",
+  },
+  {
+    id: 19,
+    name: "Educational Robot Kit",
+    price: 129.99,
+    category: "Toys",
+    image: "https://images.unsplash.com/photo-1531525797753-909788756a3d?w=500&q=80",
+  },
+  {
+    id: 20,
+    name: "Plush Teddy Bear",
+    price: 24.99,
+    category: "Toys",
+    image: "https://images.unsplash.com/photo-1559454403-b4fb0b0b2b3f?w=500&q=80",
+  },
+  {
+    id: 21,
+    name: "Art Supply Set",
+    price: 39.99,
+    category: "Toys",
+    image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=500&q=80",
+  },
+  {
+    id: 22,
+    name: "Science Experiment Kit",
+    price: 44.99,
+    category: "Toys",
+    image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=500&q=80",
+  },
+  {
+    id: 23,
+    name: "Wooden Train Set",
+    price: 89.99,
+    category: "Toys",
+    image: "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?w=500&q=80",
+  },
+  {
+    id: 24,
+    name: "Dollhouse Mansion",
+    price: 199.99,
+    category: "Toys",
+    image: "https://images.unsplash.com/photo-1584994696678-3d739b5ac1bf?w=500&q=80",
+  },
+  {
+    id: 25,
+    name: "Musical Keyboard",
+    price: 59.99,
+    category: "Toys",
+    image: "https://images.unsplash.com/photo-1545293527-e26058c5b48b?w=500&q=80",
+  },
+  {
+    id: 26,
+    name: "Interactive Globe",
+    price: 49.99,
+    category: "Toys",
+    image: "https://images.unsplash.com/photo-1576239088647-8ea2781c1c76?w=500&q=80",
+  },
+  {
+    id: 27,
+    name: "Basketball Set",
+    price: 34.99,
+    category: "Toys",
+    image: "https://images.unsplash.com/photo-1494199505258-5f95387f933c?w=500&q=80",
+  },
+  {
+    id: 28,
+    name: "Play Kitchen Set",
+    price: 129.99,
+    category: "Toys",
+    image: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=500&q=80",
+  },
+  {
+    id: 29,
+    name: "Magic Kit",
+    price: 29.99,
+    category: "Toys",
+    image: "https://images.unsplash.com/photo-1632507127789-bee443b0d0be?w=500&q=80",
+  },
+  {
+    id: 30,
+    name: "Racing Track Set",
+    price: 89.99,
+    category: "Toys",
+    image: "https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=500&q=80",
+  },
+  {
+    id: 31,
+    name: "Puzzle Collection",
+    price: 19.99,
+    category: "Toys",
+    image: "https://images.unsplash.com/photo-1576334761529-68c11de19f71?w=500&q=80",
+  },
+  {
+    id: 32,
+    name: "Dinosaur Figure Set",
+    price: 44.99,
+    category: "Toys",
+    image: "https://images.unsplash.com/photo-1577741314755-048d8525d31e?w=500&q=80",
+  },
+  {
+    id: 33,
+    name: "Drawing Tablet",
+    price: 69.99,
+    category: "Toys",
+    image: "https://images.unsplash.com/photo-1589136777351-efef7e0fa5e3?w=500&q=80",
+  },
+  {
+    id: 34,
+    name: "Action Figure Pack",
+    price: 39.99,
+    category: "Toys",
+    image: "https://images.unsplash.com/photo-1558507334-57300f59f0bd?w=500&q=80",
   }
 ];
 
