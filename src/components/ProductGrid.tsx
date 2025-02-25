@@ -2,7 +2,7 @@ import { Card, CardContent, CardFooter } from "./ui/card";
 import { Badge } from "./ui/badge";
 
 const products = [
-  // Snacks & Food
+  // Snacks & Food - Expanded Section
   {
     id: 1,
     name: "Fresh Fruits Bundle",
@@ -24,7 +24,119 @@ const products = [
     category: "Snacks & Food",
     image: "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=500&q=80",
   },
-  
+  {
+    id: 35,
+    name: "Premium Chocolate Box",
+    price: 29.99,
+    category: "Snacks & Food",
+    image: "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=500&q=80",
+  },
+  {
+    id: 36,
+    name: "Artisan Cheese Selection",
+    price: 34.99,
+    category: "Snacks & Food",
+    image: "https://images.unsplash.com/photo-1452195100486-9cc805987862?w=500&q=80",
+  },
+  {
+    id: 37,
+    name: "Gourmet Popcorn",
+    price: 9.99,
+    category: "Snacks & Food",
+    image: "https://images.unsplash.com/photo-1578849278619-e73505e9610f?w=500&q=80",
+  },
+  {
+    id: 38,
+    name: "Dried Fruit Medley",
+    price: 16.99,
+    category: "Snacks & Food",
+    image: "https://images.unsplash.com/photo-1543362906-acfc16c67564?w=500&q=80",
+  },
+  {
+    id: 39,
+    name: "Protein Bar Pack",
+    price: 22.99,
+    category: "Snacks & Food",
+    image: "https://images.unsplash.com/photo-1622484211148-906c61d30a08?w=500&q=80",
+  },
+  {
+    id: 40,
+    name: "Organic Crackers",
+    price: 7.99,
+    category: "Snacks & Food",
+    image: "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?w=500&q=80",
+  },
+  {
+    id: 41,
+    name: "Premium Coffee Beans",
+    price: 24.99,
+    category: "Snacks & Food",
+    image: "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=500&q=80",
+  },
+  {
+    id: 42,
+    name: "Granola Mix",
+    price: 12.99,
+    category: "Snacks & Food",
+    image: "https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?w=500&q=80",
+  },
+  {
+    id: 43,
+    name: "Beef Jerky Pack",
+    price: 18.99,
+    category: "Snacks & Food",
+    image: "https://images.unsplash.com/photo-1504185945330-7a3ca1380535?w=500&q=80",
+  },
+  {
+    id: 44,
+    name: "Healthy Nuts Bundle",
+    price: 27.99,
+    category: "Snacks & Food",
+    image: "https://images.unsplash.com/photo-1536591375-e743c3cbd826?w=500&q=80",
+  },
+  {
+    id: 45,
+    name: "Dark Chocolate Selection",
+    price: 21.99,
+    category: "Snacks & Food",
+    image: "https://images.unsplash.com/photo-1511381939415-e44015466834?w=500&q=80",
+  },
+  {
+    id: 46,
+    name: "Organic Tea Collection",
+    price: 19.99,
+    category: "Snacks & Food",
+    image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=500&q=80",
+  },
+  {
+    id: 47,
+    name: "Vegan Snack Box",
+    price: 32.99,
+    category: "Snacks & Food",
+    image: "https://images.unsplash.com/photo-1540914124281-342587941389?w=500&q=80",
+  },
+  {
+    id: 48,
+    name: "Gluten-Free Cookie Pack",
+    price: 15.99,
+    category: "Snacks & Food",
+    image: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=500&q=80",
+  },
+  {
+    id: 49,
+    name: "Energy Bar Bundle",
+    price: 24.99,
+    category: "Snacks & Food",
+    image: "https://images.unsplash.com/photo-1622484211148-906c61d30a08?w=500&q=80",
+  },
+  {
+    id: 50,
+    name: "Artisan Bread Selection",
+    price: 28.99,
+    category: "Snacks & Food",
+    image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500&q=80",
+  },
+
   // Electronics
   {
     id: 4,
@@ -47,7 +159,7 @@ const products = [
     category: "Electronics",
     image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=500&q=80",
   },
-  
+
   // Vehicles
   {
     id: 7,
@@ -63,7 +175,7 @@ const products = [
     category: "Vehicles",
     image: "https://images.unsplash.com/photo-1493238792000-8113da705763?w=500&q=80",
   },
-  
+
   // Bikes
   {
     id: 9,
@@ -79,7 +191,7 @@ const products = [
     category: "Bikes",
     image: "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=500&q=80",
   },
-  
+
   // Mobiles
   {
     id: 11,
@@ -95,7 +207,7 @@ const products = [
     category: "Mobiles",
     image: "https://images.unsplash.com/photo-1597740985671-a58d7d11a72b?w=500&q=80",
   },
-  
+
   // Home
   {
     id: 13,
@@ -111,7 +223,7 @@ const products = [
     category: "Home",
     image: "https://images.unsplash.com/photo-1532372320978-9d4f23e9e2d7?w=500&q=80",
   },
-  
+
   // Kitchen
   {
     id: 15,
@@ -127,7 +239,7 @@ const products = [
     category: "Kitchen",
     image: "https://images.unsplash.com/photo-1570486829671-acd99a75b2bc?w=500&q=80",
   },
-  
+
   // Toys
   {
     id: 17,
